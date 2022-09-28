@@ -9,7 +9,7 @@ const getBreakTimeDb = () => {
   if (storedTime) {
     breakTime = JSON.parse(storedTime);
   }
-  return +breakTime;
+  return breakTime;
 };
 
 export { addBreakTimeToDb, getBreakTimeDb };
