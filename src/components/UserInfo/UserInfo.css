@@ -1,6 +1,6 @@
 .user-meta{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    background-color: #F2F4FA;
+    background-color: #F2F4FA; */
 }

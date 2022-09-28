@@ -19,11 +19,16 @@ const Sidebar = ({ readingTime, completedToast }) => {
   };
 
   return (
-    <div className="sidebar-container">
-      <UserInfo />
-      <AddBreak breakTime={breakTime} addBreakTime={addBreakTime} />
-      <ReadSummary breakTime={breakTime} readingTime={readingTime} completedToast={completedToast}/>
-
+    <div className="sidebar-container bg-white p-5 h-full m-[5%] lg:m-0  shadow-md rounded-2xl lg:rounded-none ">
+      <div className="sticky top-5 right-0 text-center lg:text-left">
+        <UserInfo />
+        <AddBreak breakTime={breakTime} addBreakTime={addBreakTime} />
+        <ReadSummary
+          breakTime={breakTime}
+          readingTime={readingTime}
+          completedToast={completedToast}
+        />
+      </div>
     </div>
   );
 };

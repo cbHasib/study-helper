@@ -7,7 +7,7 @@ import userImage from "../../images/Hasib.jpg";
 const UserInfo = () => {
   return (
     <div>
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center justify-center space-x-3">
         <div className="avatar">
           <div className="mask mask-squircle w-12 h-12 ">
             <img src={userImage} alt="Avatar of user" />
@@ -22,22 +22,22 @@ const UserInfo = () => {
         </div>
       </div>
 
-      <div className="user-meta p-4 rounded-xl my-8 shadow">
-        <div className="mx-auto text-center">
+      <div className="user-meta bg-[#F2F4FA] flex gap-4 justify-evenly items-center flex-wrap p-4 rounded-xl my-8 shadow text-center">
+        <div>
           <p className="text-[#9DACC1]">
             <span className="font-bold text-2xl text-[#191C32]">75</span>hr
           </p>
           <p>Read</p>
         </div>
 
-        <div className="mx-auto text-center">
+        <div>
           <p className="text-[#9DACC1]">
             <span className="font-bold text-2xl text-[#191C32]">80</span>%
           </p>
           <p>Progress</p>
         </div>
 
-        <div className="mx-auto text-center">
+        <div>
           <p className="text-[#9DACC1]">
             <span className="font-bold text-2xl text-[#191C32]">92</span>%
           </p>

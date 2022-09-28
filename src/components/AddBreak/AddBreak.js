@@ -1,8 +1,7 @@
 import React from "react";
 import "./AddBreak.css";
 
-const AddBreak = ({breakTime, addBreakTime}) => {
-  
+const AddBreak = ({ breakTime, addBreakTime }) => {
   let isActive = "active-break";
   let is10Active = "";
   let is15Active = "";
@@ -20,7 +19,7 @@ const AddBreak = ({breakTime, addBreakTime}) => {
     <div>
       <h2 className="font-medium text-xl mb-3">Add a Break</h2>
 
-      <div className="break-timing-container p-4 rounded-xl mb-8 shadow">
+      <div className="break-timing-container bg-[#F2F4FA] p-4 rounded-xl mb-8 shadow flex flex-wrap gap-1 justify-center items-center">
         <button
           onClick={() => addBreakTime(10)}
           className={`btn btn-circle btn-primary + ${is10Active}`}

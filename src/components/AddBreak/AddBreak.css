@@ -1,10 +1,3 @@
-.break-timing-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-    background-color: #F2F4FA;
-}
-
 .break-timing-container .btn {
     color: black;
     background-color: white;
