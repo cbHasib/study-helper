@@ -1,0 +1,23 @@
+.break-timing-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    background-color: #F2F4FA;
+}
+
+.break-timing-container .btn {
+    color: black;
+    background-color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.break-timing-container .btn:hover {
+    color: white;
+    background-color: hsl(var(--p));
+}
+
+.active-break {
+    color: white!important;
+    background-color: hsl(var(--p))!important;
+}
