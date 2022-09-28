@@ -1,7 +1,7 @@
 import React from "react";
 import "./ActivityCard.css";
 
-const ActivityCard = ({ topic }) => {
+const ActivityCard = ({ topic, handleReading }) => {
   const { id, name, about, time, image, course } = topic;
   return (
     <div className="card w-full bg-white shadow-xl">
@@ -24,7 +24,7 @@ const ActivityCard = ({ topic }) => {
           Time required : <span className="font-bold">{time}m</span>
         </p>
         <div className="card-actions w-full pt-1">
-          <button className="btn btn-primary w-full">Start Reading</button>
+          <button className="btn btn-primary w-full" onClick={()=> handleReading(id)}>Start Reading</button>
         </div>
       </div>
     </div>
