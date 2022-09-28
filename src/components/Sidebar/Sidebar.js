@@ -19,7 +19,7 @@ const Sidebar = ({ readingTime, completedToast }) => {
   };
 
   return (
-    <div className="sidebar-container bg-white p-5 h-full m-[5%] lg:m-0  shadow-md rounded-2xl lg:rounded-none ">
+    <div className="bg-white p-5 h-full m-[5%] lg:m-0  shadow-md rounded-2xl lg:rounded-none ">
       <div className="sticky top-5 right-0 text-center lg:text-left">
         <UserInfo />
         <AddBreak breakTime={breakTime} addBreakTime={addBreakTime} />
