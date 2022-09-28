@@ -19,13 +19,17 @@ const Home = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-9">
-      <div className="lg:col-span-7">
-        <Activity topics={topics} handleReading={handleReading} />
+    <div>
+      <div className="grid grid-cols-1 lg:grid-cols-9">
+        <div className="lg:col-span-7">
+          <Activity topics={topics} handleReading={handleReading} />
+        </div>
+        <div className="lg:col-span-2">
+          <Sidebar readingTime={readingTime} />
+        </div>
       </div>
-      <div className="lg:col-span-2">
-        <Sidebar readingTime={readingTime} />
-      </div>
+
+      
     </div>
   );
 };

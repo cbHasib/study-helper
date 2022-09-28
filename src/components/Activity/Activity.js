@@ -7,10 +7,12 @@ const Activity = ({ topics, handleReading }) => {
   return (
     <div className="activity-container p-[5%]">
       <div className="text-center lg:text-left">
-        <h1 className="font-semibold text-3xl uppercase text-primary">
+        <h1 className="font-semibold text-3xl uppercase text-primary mt-5 lg:mt-0">
           <img src={logo} className="inline h-12 w-12" alt="" /> Study Helper
         </h1>
-        <h2 className="font-bold text-xl my-10">Select Today's Topic</h2>
+        <h2 className="font-bold text-xl my-5 lg:my-10 lg:mt-5">
+          Select Today's Topic
+        </h2>
       </div>
 
       <div
