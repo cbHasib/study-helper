@@ -7,7 +7,7 @@ const getBreakTimeDb = () => {
 
   const storedTime = localStorage.getItem("break-time");
   if (storedTime) {
-    breakTime = JSON.parse(breakTime);
+    breakTime = JSON.parse(storedTime);
   }
   return +breakTime;
 };

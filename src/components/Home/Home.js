@@ -13,16 +13,15 @@ const Home = () => {
       .then((data) => setTopics(data));
   }, []);
 
-  const handleReading = id =>{
-    console.log(id);
-    const selectedTopic = topics.find(topic => topic.id === id);
-    setReadingTime(selectedTopic.time + readingTime)
-  }
+  const handleReading = (id) => {
+    const selectedTopic = topics.find((topic) => topic.id === id);
+    setReadingTime(selectedTopic.time + readingTime);
+  };
 
   return (
     <div className="home-container">
-      <Activity topics={topics} handleReading={handleReading}/>
-      <Sidebar readingTime={readingTime}/>
+      <Activity topics={topics} handleReading={handleReading} />
+      <Sidebar readingTime={readingTime} />
     </div>
   );
 };

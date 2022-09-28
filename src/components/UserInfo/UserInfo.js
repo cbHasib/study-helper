@@ -2,17 +2,15 @@ import React from "react";
 import "./UserInfo.css";
 
 import idImage from "../../images/id.svg";
+import userImage from "../../images/Hasib.jpg";
 
 const UserInfo = () => {
   return (
     <div>
       <div className="flex items-center space-x-3">
         <div className="avatar">
-          <div className="mask mask-squircle w-12 h-12">
-            <img
-              src="https://daisyui.com/tailwind-css-component-profile-2@56w.png"
-              alt="Avatar Tailwind CSS Component"
-            />
+          <div className="mask mask-squircle w-12 h-12 ">
+            <img src={userImage} alt="Avatar of user" />
           </div>
         </div>
         <div>
@@ -24,22 +22,22 @@ const UserInfo = () => {
         </div>
       </div>
 
-      <div className="user-meta p-4 rounded-xl my-8">
-        <div>
+      <div className="user-meta p-4 rounded-xl my-8 shadow">
+        <div className="mx-auto text-center">
           <p className="text-[#9DACC1]">
             <span className="font-bold text-2xl text-[#191C32]">75</span>hr
           </p>
           <p>Read</p>
         </div>
 
-        <div>
+        <div className="mx-auto text-center">
           <p className="text-[#9DACC1]">
             <span className="font-bold text-2xl text-[#191C32]">80</span>%
           </p>
           <p>Progress</p>
         </div>
 
-        <div>
+        <div className="mx-auto text-center">
           <p className="text-[#9DACC1]">
             <span className="font-bold text-2xl text-[#191C32]">92</span>%
           </p>
