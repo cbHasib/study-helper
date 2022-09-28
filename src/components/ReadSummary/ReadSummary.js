@@ -16,11 +16,11 @@ const ReadSummary = ({ readingTime, breakTime }) => {
 
       <div className="bg-[#F2F4FA] p-4 rounded-xl mb-2 flex justify-between items-center shadow">
         <span className="font-medium">Reading Time:</span>
-        <span className="text-[#9DACC1]">{readingTime}minutes</span>
+        <span className="text-[#9DACC1]">{readingTime} minutes</span>
       </div>
       <div className="bg-[#F2F4FA] p-4 rounded-xl mb-4 flex justify-between items-center shadow">
         <span className="font-medium">Break Time:</span>
-        <span className="text-[#9DACC1]">{breakTime}minutes</span>
+        <span className="text-[#9DACC1]">{breakTime} minutes</span>
       </div>
       <button
         onClick={showToastMessage}
