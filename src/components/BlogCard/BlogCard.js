@@ -3,7 +3,7 @@ import React from "react";
 const BlogCard = ({ blog, handleModal }) => {
   const { id, image, question } = blog;
   return (
-    <div className="card card-compact w-full bg-base-100 shadow">
+    <div className="card card-compact w-full bg-white shadow static">
       <figure>
         <img className="w-full h-48 object-cover" src={image} alt={question} />
       </figure>
