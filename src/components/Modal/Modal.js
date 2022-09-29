@@ -1,6 +1,7 @@
 import React from "react";
 
-const Modal = () => {
+const Modal = ({ modalData, setModalData }) => {
+  const { image, question, answer } = modalData;
   return (
     <div>
       <input type="checkbox" id="my-modal-3" className="modal-toggle" />
@@ -8,17 +9,18 @@ const Modal = () => {
         <div className="modal-box relative">
           <label
             htmlFor="my-modal-3"
-            className="btn btn-sm btn-circle absolute right-2 top-2"
+            className="btn btn-sm btn-circle btn-primary absolute right-2 top-2"
+            onClick={() => setModalData({})}
           >
             ✕
           </label>
-          <h3 className="text-lg font-bold">
-            Congratulations random Internet user!
-          </h3>
-          <p className="py-4">
-            You've been selected for a chance to get one year of subscription to
-            use Wikipedia for free!
-          </p>
+          <img
+            className="w-full h-60 object-cover rounded-xl"
+            src={image}
+            alt={question}
+          />
+          <h3 className="text-xl font-bold mt-5 text-primary">{question}</h3>
+          <p className="py-4">{answer}</p>
         </div>
       </div>
     </div>

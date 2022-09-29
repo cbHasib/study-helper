@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Activity from "../Activity/Activity";
 import Blog from "../Blog/Blog";
+import Footer from "../Footer/Footer";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Home.css";
 
@@ -31,6 +32,7 @@ const Home = () => {
       </div>
 
       <Blog />
+      <Footer />
     </div>
   );
 };
