@@ -21,6 +21,7 @@ const Blog = () => {
         {blogData.map((blog) => (
           <BlogCard key={blog.id} blog={blog} />
         ))}
+        ;
       </div>
 
       <Modal />
