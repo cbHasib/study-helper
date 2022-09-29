@@ -11,7 +11,7 @@ const BlogCard = ({ blog }) => {
           alt={question}
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body justify-between">
         <h2 className="card-title justify-center">{question}</h2>
         <div className="card-actions justify-end">
           <label htmlFor="my-modal-3" className="btn btn-primary w-full">
